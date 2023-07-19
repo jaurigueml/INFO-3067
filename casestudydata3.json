@@ -1,7 +1,4 @@
 [
-  {
-    "brand": "Nike",
-    "products": [
       {
         "brand": "Nike",
         "id": "Nike1",
@@ -23,12 +20,7 @@
         "qtyOnHand": 75,
         "qtyOnBackOrder": 5,
         "description": "The Nike React Element 55 offers a lightweight and modern design."
-      }
-    ]
-  },
-  {
-    "brand": "Adidas",
-    "products": [
+      },
       {
         "brand": "Adidas",
         "id": "Adidas1",
@@ -50,12 +42,7 @@
         "qtyOnHand": 120,
         "qtyOnBackOrder": 0,
         "description": "The Adidas Stan Smith is a classic and iconic sneaker."
-      }
-    ]
-  },
-  {
-    "brand": "Puma",
-    "products": [
+      },
       {
         "brand": "Puma",
         "id": "Puma1",
@@ -78,6 +65,4 @@
         "qtyOnBackOrder": 0,
         "description": "The Puma Cali is a fashionable and versatile sneaker."
       }
-    ]
-  }
 ]
