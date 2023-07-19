@@ -3,6 +3,8 @@
     "brand": "Nike",
     "products": [
       {
+        "brand": "Nike",
+        "id": "Nike1",
         "productName": "Nike Air Max 270",
         "graphicName": "air_max_270.jpg",
         "costPrice": 80.00,
@@ -12,6 +14,8 @@
         "description": "Nike Air Max 270 is a stylish and comfortable sneaker."
       },
       {
+        "brand": "Nike",
+        "id": "Nike2",
         "productName": "Nike React Element 55",
         "graphicName": "react_element_55.jpg",
         "costPrice": 70.00,
@@ -27,6 +31,8 @@
     "brand": "Adidas",
     "products": [
       {
+        "brand": "Adidas",
+        "id": "Adidas1",
         "productName": "Adidas Ultraboost",
         "graphicName": "ultraboost.jpg",
         "costPrice": 90.00,
@@ -36,6 +42,8 @@
         "description": "Adidas Ultraboost provides great energy return and comfort."
       },
       {
+        "brand": "Adidas",
+        "id": "Adidas2",
         "productName": "Adidas Stan Smith",
         "graphicName": "stan_smith.jpg",
         "costPrice": 50.00,
@@ -51,6 +59,8 @@
     "brand": "Puma",
     "products": [
       {
+        "brand": "Puma",
+        "id": "Puma1",
         "productName": "Puma RS-X3",
         "graphicName": "rs_x3.jpg",
         "costPrice": 60.00,
@@ -60,6 +70,8 @@
         "description": "Puma RS-X3 offers a retro and chunky design."
       },
       {
+        "brand": "Puma",
+        "id": "Puma2",
         "productName": "Puma Cali",
         "graphicName": "puma_cali.jpg",
         "costPrice": 55.00,
