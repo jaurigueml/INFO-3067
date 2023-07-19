@@ -1,68 +1,68 @@
 [
-{
-"brand": "New Balance",
-"id": "NB1",
-"productName": "New Balance 990",
-"graphicName": "nb_990.jpg",
-"costPrice": 75.00,
-"msrp": 140.00,
-"qtyOnHand": 80,
-"qtyOnBackOrder": 0,
-"description": "The New Balance 990 offers a classic and timeless look."
-},
-{
-"brand": "New Balance",
-"id": "NB2",
-"productName": "New Balance Fresh Foam Roav",
-"graphicName": "nb_fresh_foam_roav.jpg",
-"costPrice": 65.00,
-"msrp": 110.00,
-"qtyOnHand": 60,
-"qtyOnBackOrder": 3,
-"description": "New Balance Fresh Foam Roav provides plush cushioning and a modern design."
-},
-{
-"brand": "Reebok",
-"id": "Reebok1",
-"productName": "Reebok Classic Leather",
-"graphicName": "reebok_classic_leather.jpg",
-"costPrice": 55.00,
-"msrp": 100.00,
-"qtyOnHand": 45,
-"qtyOnBackOrder": 5,
-"description": "Reebok Classic Leather is a timeless and versatile choice."
-},
-{
-"brand": "Reebok",
-"id": "Reebok2",
-"productName": "Reebok Zig Kinetica",
-"graphicName": "reebok_zig_kinetica.jpg",
-"costPrice": 70.00,
-"msrp": 130.00,
-"qtyOnHand": 70,
-"qtyOnBackOrder": 0,
-"description": "Reebok Zig Kinetica offers energy return and a futuristic design."
-},
-{
-"brand": "Under Armour",
-"id": "UA1",
-"productName": "Under Armour HOVR Phantom SE",
-"graphicName": "ua_hovr_phantom_se.jpg",
-"costPrice": 85.00,
-"msrp": 150.00,
-"qtyOnHand": 25,
-"qtyOnBackOrder": 1,
-"description": "Under Armour HOVR Phantom SE provides a comfortable and supportive fit."
-},
-{
-"brand": "Under Armour",
-"id": "UA2",
-"productName": "Under Armour Project Rock 3",
-"graphicName": "ua_project_rock_3.jpg",
-"costPrice": 95.00,
-"msrp": 180.00,
-"qtyOnHand": 100,
-"qtyOnBackOrder": 0,
-"description": "The Under Armour Project Rock 3 is designed for intense workouts and performance."
-}
+  {
+    "BRAND": "New Balance",
+    "ID": "NB1",
+    "PRODUCTNAME": "New Balance 990",
+    "GRAPHICNAME": "nb_990.jpg",
+    "COSTPRICE": 75.00,
+    "MSRP": 140.00,
+    "QTYONHAND": 80,
+    "QTYONBACKORDER": 0,
+    "DESCRIPTION": "The New Balance 990 offers a classic and timeless look."
+  },
+  {
+    "BRAND": "New Balance",
+    "ID": "NB2",
+    "PRODUCTNAME": "New Balance Fresh Foam Roav",
+    "GRAPHICNAME": "nb_fresh_foam_roav.jpg",
+    "COSTPRICE": 65.00,
+    "MSRP": 110.00,
+    "QTYONHAND": 60,
+    "QTYONBACKORDER": 3,
+    "DESCRIPTION": "New Balance Fresh Foam Roav provides plush cushioning and a modern design."
+  },
+  {
+    "BRAND": "Reebok",
+    "ID": "Reebok1",
+    "PRODUCTNAME": "Reebok Classic Leather",
+    "GRAPHICNAME": "reebok_classic_leather.jpg",
+    "COSTPRICE": 55.00,
+    "MSRP": 100.00,
+    "QTYONHAND": 45,
+    "QTYONBACKORDER": 5,
+    "DESCRIPTION": "Reebok Classic Leather is a timeless and versatile choice."
+  },
+  {
+    "BRAND": "Reebok",
+    "ID": "Reebok2",
+    "PRODUCTNAME": "Reebok Zig Kinetica",
+    "GRAPHICNAME": "reebok_zig_kinetica.jpg",
+    "COSTPRICE": 70.00,
+    "MSRP": 130.00,
+    "QTYONHAND": 70,
+    "QTYONBACKORDER": 0,
+    "DESCRIPTION": "Reebok Zig Kinetica offers energy return and a futuristic design."
+  },
+  {
+    "BRAND": "Under Armour",
+    "ID": "UA1",
+    "PRODUCTNAME": "Under Armour HOVR Phantom SE",
+    "GRAPHICNAME": "ua_hovr_phantom_se.jpg",
+    "COSTPRICE": 85.00,
+    "MSRP": 150.00,
+    "QTYONHAND": 25,
+    "QTYONBACKORDER": 1,
+    "DESCRIPTION": "Under Armour HOVR Phantom SE provides a comfortable and supportive fit."
+  },
+  {
+    "BRAND": "Under Armour",
+    "ID": "UA2",
+    "PRODUCTNAME": "Under Armour Project Rock 3",
+    "GRAPHICNAME": "ua_project_rock_3.jpg",
+    "COSTPRICE": 95.00,
+    "MSRP": 180.00,
+    "QTYONHAND": 100,
+    "QTYONBACKORDER": 0,
+    "DESCRIPTION": "The Under Armour Project Rock 3 is designed for intense workouts and performance."
+  }
 ]
