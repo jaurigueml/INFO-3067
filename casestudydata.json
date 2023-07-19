@@ -24,7 +24,6 @@
         "qtyOnBackOrder": 5,
         "description": "The Nike React Element 55 offers a lightweight and modern design."
       }
-      // Add more Nike products here if needed
     ]
   },
   {
@@ -52,7 +51,6 @@
         "qtyOnBackOrder": 0,
         "description": "The Adidas Stan Smith is a classic and iconic sneaker."
       }
-      // Add more Adidas products here if needed
     ]
   },
   {
@@ -80,7 +78,6 @@
         "qtyOnBackOrder": 0,
         "description": "The Puma Cali is a fashionable and versatile sneaker."
       }
-      // Add more Puma products here if needed
     ]
   }
 ]
