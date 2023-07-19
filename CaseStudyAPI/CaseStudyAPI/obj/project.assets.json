@@ -4046,11 +4046,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jauri\\source\\repos\\CaseStudyAPI\\CaseStudyAPI\\CaseStudyAPI.csproj",
+      "projectUniqueName": "E:\\INFO3067\\CaseStudyAPI\\CaseStudyAPI\\CaseStudyAPI.csproj",
       "projectName": "CaseStudyAPI",
-      "projectPath": "C:\\Users\\jauri\\source\\repos\\CaseStudyAPI\\CaseStudyAPI\\CaseStudyAPI.csproj",
+      "projectPath": "E:\\INFO3067\\CaseStudyAPI\\CaseStudyAPI\\CaseStudyAPI.csproj",
       "packagesPath": "C:\\Users\\jauri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jauri\\source\\repos\\CaseStudyAPI\\CaseStudyAPI\\obj\\",
+      "outputPath": "E:\\INFO3067\\CaseStudyAPI\\CaseStudyAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4065,7 +4065,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4130,7 +4129,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }
