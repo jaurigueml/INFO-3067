@@ -1,68 +1,68 @@
 [
-      {
-        "brand": "Nike",
-        "id": "Nike1",
-        "productName": "Nike Air Max 270",
-        "graphicName": "air_max_270.jpg",
-        "costPrice": 80.00,
-        "msrp": 150.00,
-        "qtyOnHand": 100,
-        "qtyOnBackOrder": 0,
-        "description": "Nike Air Max 270 is a stylish and comfortable sneaker."
-      },
-      {
-        "brand": "Nike",
-        "id": "Nike2",
-        "productName": "Nike React Element 55",
-        "graphicName": "react_element_55.jpg",
-        "costPrice": 70.00,
-        "msrp": 120.00,
-        "qtyOnHand": 75,
-        "qtyOnBackOrder": 5,
-        "description": "The Nike React Element 55 offers a lightweight and modern design."
-      },
-      {
-        "brand": "Adidas",
-        "id": "Adidas1",
-        "productName": "Adidas Ultraboost",
-        "graphicName": "ultraboost.jpg",
-        "costPrice": 90.00,
-        "msrp": 180.00,
-        "qtyOnHand": 50,
-        "qtyOnBackOrder": 10,
-        "description": "Adidas Ultraboost provides great energy return and comfort."
-      },
-      {
-        "brand": "Adidas",
-        "id": "Adidas2",
-        "productName": "Adidas Stan Smith",
-        "graphicName": "stan_smith.jpg",
-        "costPrice": 50.00,
-        "msrp": 90.00,
-        "qtyOnHand": 120,
-        "qtyOnBackOrder": 0,
-        "description": "The Adidas Stan Smith is a classic and iconic sneaker."
-      },
-      {
-        "brand": "Puma",
-        "id": "Puma1",
-        "productName": "Puma RS-X3",
-        "graphicName": "rs_x3.jpg",
-        "costPrice": 60.00,
-        "msrp": 100.00,
-        "qtyOnHand": 30,
-        "qtyOnBackOrder": 2,
-        "description": "Puma RS-X3 offers a retro and chunky design."
-      },
-      {
-        "brand": "Puma",
-        "id": "Puma2",
-        "productName": "Puma Cali",
-        "graphicName": "puma_cali.jpg",
-        "costPrice": 55.00,
-        "msrp": 95.00,
-        "qtyOnHand": 90,
-        "qtyOnBackOrder": 0,
-        "description": "The Puma Cali is a fashionable and versatile sneaker."
-      }
+{
+"brand": "New Balance",
+"id": "NB1",
+"productName": "New Balance 990",
+"graphicName": "nb_990.jpg",
+"costPrice": 75.00,
+"msrp": 140.00,
+"qtyOnHand": 80,
+"qtyOnBackOrder": 0,
+"description": "The New Balance 990 offers a classic and timeless look."
+},
+{
+"brand": "New Balance",
+"id": "NB2",
+"productName": "New Balance Fresh Foam Roav",
+"graphicName": "nb_fresh_foam_roav.jpg",
+"costPrice": 65.00,
+"msrp": 110.00,
+"qtyOnHand": 60,
+"qtyOnBackOrder": 3,
+"description": "New Balance Fresh Foam Roav provides plush cushioning and a modern design."
+},
+{
+"brand": "Reebok",
+"id": "Reebok1",
+"productName": "Reebok Classic Leather",
+"graphicName": "reebok_classic_leather.jpg",
+"costPrice": 55.00,
+"msrp": 100.00,
+"qtyOnHand": 45,
+"qtyOnBackOrder": 5,
+"description": "Reebok Classic Leather is a timeless and versatile choice."
+},
+{
+"brand": "Reebok",
+"id": "Reebok2",
+"productName": "Reebok Zig Kinetica",
+"graphicName": "reebok_zig_kinetica.jpg",
+"costPrice": 70.00,
+"msrp": 130.00,
+"qtyOnHand": 70,
+"qtyOnBackOrder": 0,
+"description": "Reebok Zig Kinetica offers energy return and a futuristic design."
+},
+{
+"brand": "Under Armour",
+"id": "UA1",
+"productName": "Under Armour HOVR Phantom SE",
+"graphicName": "ua_hovr_phantom_se.jpg",
+"costPrice": 85.00,
+"msrp": 150.00,
+"qtyOnHand": 25,
+"qtyOnBackOrder": 1,
+"description": "Under Armour HOVR Phantom SE provides a comfortable and supportive fit."
+},
+{
+"brand": "Under Armour",
+"id": "UA2",
+"productName": "Under Armour Project Rock 3",
+"graphicName": "ua_project_rock_3.jpg",
+"costPrice": 95.00,
+"msrp": 180.00,
+"qtyOnHand": 100,
+"qtyOnBackOrder": 0,
+"description": "The Under Armour Project Rock 3 is designed for intense workouts and performance."
+}
 ]
