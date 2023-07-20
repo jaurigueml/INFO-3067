@@ -33,7 +33,7 @@ namespace CaseStudyAPI.Controllers
 
         private async Task<string> GetMenuItemJsonFromWebAsync()
         {
-            string url = "https://raw.githubusercontent.com/jaurigueml/INFO-3067/main/casestudydata3.json";
+            string url = "https://raw.githubusercontent.com/jaurigueml/INFO-3067/main/casestudydata6.json";
 
             var httpClient = new HttpClient();
             var response = await httpClient.GetAsync(url);

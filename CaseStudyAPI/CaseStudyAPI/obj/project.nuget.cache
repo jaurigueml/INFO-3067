@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "e4bvm5Gy3YdXLKjuKK4E0rb06v8ScnAHXTzPScU8RWaxnIp6Z8iD4BxlX+xu+r09R/MOw9iqJfRUPH5zdKA6CQ==",
+  "dgSpecHash": "h5y9fkLZJqUa/b3jwKvYJeiylovqbqPBZXFURMpoGZ4T3B6tl7FYRkbTqw8I89psV4Fv0Q0vJDFtWBFssA6I5Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jauri\\source\\repos\\CaseStudyAPI\\CaseStudyAPI\\CaseStudyAPI.csproj",
+  "projectFilePath": "E:\\INFO3067\\CaseStudyAPI\\CaseStudyAPI\\CaseStudyAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jauri\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\jauri\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

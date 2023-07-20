@@ -23,9 +23,9 @@ const routes = [
       },
       //Category Page
       {
-        path: "/category",
-        name: "category",
-        component: () => import("pages/CategoryListPage.vue"),
+        path: "/brand",
+        name: "brand",
+        component: () => import("pages/BrandListPage.vue"),
       },
     ],
   },

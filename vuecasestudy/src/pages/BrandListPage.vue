@@ -1,6 +1,9 @@
 <template>
   <div class="text-center">
-    <div class="text-h2 q-mt-lg">Categories</div>
+    <div class="logo">
+      <img src="shoes.jpg" alt="Logo" class="logo-image" />
+    </div>
+    <div class="text-h2 q-mt-lg">Brands</div>
 
     <div class="status q-mt-md text-subtitle2 text-negative" text-color="red">
       {{ state.status }}
@@ -9,23 +12,24 @@
     <p></p>
     <q-select
       class="q-mt-lg q-ml-lg"
-      v-if="state.categories.length > 0"
+      v-if="state.brands.length > 0"
       style="width: 50vw; margin-bottom: 4vh; background-color: #fff"
       :option-value="'id'"
       :option-label="'name'"
-      :options="state.categories"
-      label="Select a Category"
-      v-model="state.selectedCategoryId"
-      @update:model-value="getMenuitems()"
+      model-value=""
+      :options="state.brands"
+      label="Select a Brand"
+      v-model="state.selectedBrandId"
+      @update:model-value="getProducts()"
       emit-value
       map-options
     />
 
     <div
       class="text-h6 text-bold text-center text-primary"
-      v-if="state.menuitems.length > 0"
+      v-if="state.products.length > 0"
     >
-      {{ state.selectedCategory.name }} ITEMS
+      {{ state.selectedBrand.name }} ITEMS
     </div>
     <q-scroll-area style="height: 55vh">
       <q-card class="q-ma-md">
@@ -33,15 +37,15 @@
           <q-item
             avatar
             clickable
-            v-for="item in state.menuitems"
+            v-for="item in state.products"
             :key="item.id"
-            @click="selectMenuItem(item.id)"
+            @click="selectProduct(item.id)"
           >
-            <q-avatar>
-              <img :src="`/burger.jpg`" />
+            <q-avatar style="height: 125px; width: 90px" square>
+              <img :src="`/img/${item.graphicName}`" />
             </q-avatar>
             <q-item-section class="text-left">
-              {{ item.description }}
+              {{ item.productName }}
             </q-item-section>
           </q-item>
         </q-list>
@@ -59,13 +63,13 @@
       </q-card-actions>
       <q-card-section>
         <div class="text-subtitle2 text-center">
-          {{ state.selectedMenuItem.description }}
+          {{ state.selectedProduct.productName }}
         </div>
       </q-card-section>
       <q-card-section avatar class="text-center text-positive">
         {{ state.dialogStatus }}
-        <q-avatar>
-          <img :src="`/burger.jpg`" />
+        <q-avatar style="height: 125px; width: 90px" square>
+          <img :src="`/img/${state.selectedProduct.graphicName}`" />
         </q-avatar>
       </q-card-section>
       <q-card-section>
@@ -76,10 +80,7 @@
             transition-hide="flip-left"
             text-color="white"
           >
-            Protein 45gm Calories 610 Carbs. <br />
-            50 Fibre 3gm Choles. 125mg Salt <br />
-            1750mg Fat 26gm
-            {{ state.selectedMenuItem.protein }}gm.
+            {{ state.selectedProduct.price }}
           </q-tooltip>
         </q-chip>
       </q-card-section>
@@ -106,21 +107,30 @@
     </q-card>
   </q-dialog>
 </template>
+
+<style>
+.logo-image {
+  width: 150px;
+  height: auto;
+}
+</style>
+
 <script>
 import { reactive, onMounted } from "vue";
 import { fetcher } from "../utils/apiutil";
+
 export default {
   setup() {
     onMounted(() => {
-      loadCategories();
+      loadBrands();
     });
     let state = reactive({
       status: "",
-      categories: [],
-      menuitems: [],
-      selectedCategory: {},
-      selectedCategoryId: "",
-      selectedMenuItem: {},
+      brands: [],
+      products: [],
+      selectedBrand: {},
+      selectedBrandId: "",
+      selectedProduct: {},
       dialogStatus: "",
       itemSelected: false,
       qty: 0,
@@ -131,21 +141,21 @@ export default {
       if (state.tray.length > 0) {
         index = state.tray.findIndex(
           // is item already on the tray
-          (item) => item.id === state.selectedMenuItem.id
+          (item) => item.id === state.selectedProduct.id
         );
       }
       if (state.qty > 0) {
         index === -1 // add
           ? state.tray.push({
-              id: state.selectedMenuItem.id,
+              id: state.selectedProduct.id,
               qty: state.qty,
-              item: state.selectedMenuItem,
+              item: state.selectedProduct,
             })
           : (state.tray[index] = {
               // replace
-              id: state.selectedMenuItem.id,
+              id: state.selectedProduct.id,
               qty: state.qty,
-              item: state.selectedMenuItem,
+              item: state.selectedProduct,
             });
         state.dialogStatus = `${state.qty} item(s) added`;
       } else {
@@ -155,11 +165,12 @@ export default {
       sessionStorage.setItem("tray", JSON.stringify(state.tray));
       state.qty = 0;
     };
-    const selectMenuItem = async (menuitemid) => {
+    const selectProduct = async (productid) => {
+      console.log(state.products);
       try {
-        // q-item click sends us the menu item id, so we need to find the object
-        state.selectedMenuItem = state.menuitems.find(
-          (item) => item.id === menuitemid
+        // q-item click sends us the Product item id, so we need to find the object
+        state.selectedProduct = state.products.find(
+          (item) => item.id === productid
         );
         state.itemSelected = true;
         state.dialogStatus = "";
@@ -171,36 +182,35 @@ export default {
         state.status = `Error has occured: ${err.message}`;
       }
     };
-    const getMenuitems = async () => {
+    const getProducts = async () => {
       try {
-        state.selectedCategory = state.categories.find(
-          (category) => category.id === state.selectedCategoryId
+        state.selectedBrand = state.brands.find(
+          (brand) => brand.id === state.selectedBrandId
         );
-        state.status = `finding menuitems for category ${state.selectedCategory}...`;
-        state.menuitems = await fetcher(
-          `Menuitem/${state.selectedCategory.id}`
-        );
-        state.status = `loaded ${state.menuitems.length} menu items for
-        ${state.selectedCategory.name}`;
+        state.status = `finding products for brands ${state.selectedBrand}...`;
+        state.products = await fetcher(`Product/${state.selectedBrand.id}`);
+        state.status = `loaded ${state.products.length} product items for ${state.selectedBrand.name}`;
+        console.log(state.products);
       } catch (err) {
         console.log(err);
         state.status = `Error has occured: ${err.message}`;
       }
     };
-    const loadCategories = async () => {
+    const loadBrands = async () => {
       try {
-        state.status = "finding categories ...";
-        state.status = await fetcher(`Data`);
-        state.categories = await fetcher(`Category`);
+        state.status = "finding Brands ...";
+        state.brands = await fetcher(`Brand`);
+
+        state.status = `found ${state.brands.length} brands`;
       } catch (err) {
         console.log(err);
         state.status = `Error has occured: ${err.message}`;
       }
     };
     return {
-      loadCategories,
-      getMenuitems,
-      selectMenuItem,
+      loadBrands,
+      getProducts,
+      selectProduct,
       addToTray,
       state,
     };
